@@ -4,21 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/case-2.css">
+
+    <style>
+        body{
+            margin: 0;
+            
+        }
+        .blue-background{
+            position: absolute;
+            background-color: rgb(26, 79, 194);
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .center-little-circle{
+            background-color: rgb(82, 82, 82);
+            position: absolute;
+            /* top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+            height: 350px;
+            width: 350px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 1s ease-in-out;
+   
+        }
+        .text{
+            color: white;
+            font-size: 2.5rem;
+            transition: transform 1s ease-in-out;
+        }
+
+        .center-large-circle{
+            position: absolute;
+            /* top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);  // if use this to center the large circle it rotates around the center point
+            not around the center of the large circle */
+            height: 400px;
+            width: 400px;
+            background-color: rgb(224, 224, 224);
+            border-radius: 50%;
+
+            transition: transform 1s ease-in-out;
+        }
+
+        .red-rotating-part{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 0, 0);
+            position: relative;
+            border-top-left-radius: 100%;
+        }
+
+        .center-little-circle:hover{
+            transform: rotate(360deg);      
+        }
+
+
+    </style>
 
 </head>
 <body>
     
     <div class="blue-background">
+        
         <div class="center-large-circle">
             <div class="red-rotating-part"></div>
+            
         </div>
-    
+        
         <div class="center-little-circle">
-                <span class="text">RWAD</span>
+                    <span class="text">RWAD</span>
         </div>
-  
+        
+            
     </div>
+
+    
     
 </body>
 </html>
