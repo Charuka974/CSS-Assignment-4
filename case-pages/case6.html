@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+        .car{
+            height: 200px;
+            width: 500px;
+            top: 72%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: fixed;
+        }
+        #car-img{
+            position: relative;
+            height: 200px;
+            width: 500px;
+        }
+        .wheel{
+            position: relative;
+            height: 70px;
+            width: 70px;
+
+            animation-name: wheel-spin;
+            animation-duration: 10s;
+            /* animation-timing-function: linear; */
+            animation-iteration-count: infinite;
+            /* animation-delay: 0s; */
+        }
+        #wheel-front-img{
+            top: -90px;
+            left: 362px;      
+        }
+        #wheel-rear-img{
+            top: -90px;
+            left: -20px;
+        }
+
+        .road-city-slide{
+            width: 200vw;
+            display: flex;
+            flex-direction: row;
+            height: 70vh;
+            width: 400vw;
+
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+
+            animation-name: scroll-to-side;
+            animation-duration: 10s;
+            /* animation-timing-function: linear; */
+            animation-iteration-count: infinite;
+            /* animation-delay: 0s; */
+        }
+        .road-city{
+            width: 100vw;
+            position: relative;
+            top: 30vh;
+            display: flex;
+            flex-direction: column;
+        
+            
+        }
+        #city-img{
+            height: 40vh;
+            width: 100%;
+        }
+        #road-img{
+            height: 30vh;
+            width: 100%;
+        }
+
+        #sky-img{
+            position: fixed;
+            height: 70vh;
+            width: 100%;
+        }
+
+        @keyframes scroll-to-side {
+            0% {
+                 transform: translateX(0vw); 
+
+            } 
+            100% {
+                 transform: translateX(-300vw); 
+
+            } 
+        }
+
+        @keyframes wheel-spin {
+            100% {
+                 transform: rotate(1440deg); 
+
+            } 
+        }
+        
+    </style>
+
+</head>
+<body>
+    <img id="sky-img" src="/assets/images/case-6/sky.jpg" alt="sky">
+
+    <div class="road-city-slide">
+        <div class="road-city">
+            <img id="city-img" src="/assets/images/case-6/city.png" alt="city">
+            <img id="road-img" src="/assets/images/case-6/road.jpg" alt="road">
+        </div>
+        <div class="road-city">
+            <img id="city-img" src="/assets/images/case-6/city.png" alt="city">
+            <img id="road-img" src="/assets/images/case-6/road.jpg" alt="road">
+        </div>
+        <div class="road-city">
+            <img id="city-img" src="/assets/images/case-6/city.png" alt="city">
+            <img id="road-img" src="/assets/images/case-6/road.jpg" alt="road">
+        </div>
+        <div class="road-city">
+            <img id="city-img" src="/assets/images/case-6/city.png" alt="city">
+            <img id="road-img" src="/assets/images/case-6/road.jpg" alt="road">
+        </div>
+    </div>
+    
+    <div class="car">
+        <img id="car-img" src="/assets/images/case-6/car.png" alt="car">
+        <img class="wheel" id="wheel-front-img" src="/assets/images/case-6/wheel.png" alt="wheel">
+        <img class="wheel" id="wheel-rear-img" src="/assets/images/case-6/wheel.png" alt="wheel">
+    </div>
+    
+    
+    
+    
+    
+</body>
+</html>
