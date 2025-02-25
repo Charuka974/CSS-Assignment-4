@@ -48,7 +48,7 @@ span{
         transform: rotate(360deg);
         background-color: red;
     }
-    37.5% {
+    37.5% { 
         top: calc(100% - 100px);
         left: 0;
         transform: rotate(180deg);  
