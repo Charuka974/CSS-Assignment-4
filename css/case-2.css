@@ -57,6 +57,7 @@ body{
     /* forwards property ensures the animation stops at 360deg instead of resetting. */
     
     animation: rotateOnce 1s ease-in-out forwards; 
+    cursor: pointer;
 }
 
 @keyframes rotateOnce {
