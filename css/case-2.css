@@ -20,12 +20,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center; 
-    
-    /* transition-property: rotate;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out; */
-    
-    transition: rotate 1s ease-in-out;
 }
 .text{
     color: white;
